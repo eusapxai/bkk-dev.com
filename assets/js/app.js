@@ -6,7 +6,7 @@ $(document).ready(function () {
 	$(".spon-slider").owlCarousel({
 		dots: false,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		lazyLoad: true,
