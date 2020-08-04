@@ -12,7 +12,10 @@ $(document).ready(function () {
 		lazyLoad: true,
 		nav: true,
 		margin: 0,
-		navText: ["<", ">"],
+		navText: [
+			"<div class='left-arrow'></div>",
+			"<div class='right-arrow'></div>",
+		],
 		responsive: {
 			0: { items: 2 },
 			1500: { items: 6 },

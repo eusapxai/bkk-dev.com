@@ -8904,6 +8904,24 @@ h3 {
   background-color: #cd2122;
 }
 
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 30px solid #6e6e6e;
+  border-bottom: 15px solid transparent;
+  margin-top: 1rem;
+}
+
+.left-arrow {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 30px solid #6e6e6e;
+  border-bottom: 15px solid transparent;
+  margin-top: 1rem;
+}
+
 .bg-0 {
   background-color: #f4f9ff;
 }
