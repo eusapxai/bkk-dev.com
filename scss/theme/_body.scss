@@ -95,15 +95,16 @@ li {
 }
 
 .spon-main-img {
-	width: 100%;
+	width: 100% !important;
 	height: auto;
 }
 
-.owl-carousel .owl-item img,
+.spon-slider .owl-item img,
 .spon-img {
 	width: 100px;
-	height: 100px;
+	height: auto;
 }
+
 .team {
 	text-align: center;
 }

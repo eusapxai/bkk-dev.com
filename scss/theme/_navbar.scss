@@ -68,7 +68,7 @@
 	border-bottom-color: #ffffff;
 }
 
-.owl-theme .owl-nav .owl-prev {
+.spon-slider .owl-nav .owl-prev {
 	display: block !important;
 	position: absolute;
 	top: 20%;
@@ -78,7 +78,8 @@
 	color: $lightBlack !important;
 	font-size: 35px !important;
 }
-.owl-theme .owl-nav .owl-next {
+
+.spon-slider .owl-nav .owl-next {
 	display: block !important;
 	position: absolute;
 	top: 20%;
@@ -87,4 +88,39 @@
 	padding: 3px 6px;
 	color: $lightBlack !important;
 	font-size: 35px !important;
+}
+
+.spon-slider .owl-nav .owl-prev:focus,
+.spon-slider .owl-nav .owl-prev:active,
+.spon-slider .owl-nav .owl-next:focus,
+.spon-slider .owl-nav .owl-next:active {
+	outline: 0;
+}
+
+.spon-item {
+	height: 110px;
+	display: grid;
+}
+
+.invest-slider .owl-dots {
+	position: absolute;
+	top: 20%;
+	right: 25%;
+}
+
+.invest-slider .owl-dots .owl-dot {
+	background-color: $gray;
+	height: 6px;
+	width: 45px;
+	margin-right: 0.5rem;
+	border-radius: 3rem;
+}
+
+.invest-slider .owl-dots .active:focus,
+.invest-slider .owl-dots .active:active {
+	outline: 0;
+}
+
+.invest-slider .owl-dots .active {
+	background-color: $red;
 }

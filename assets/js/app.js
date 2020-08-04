@@ -21,4 +21,23 @@ $(document).ready(function () {
 			700: { items: 2 },
 		},
 	});
+
+	$(".invest-slider").owlCarousel({
+		dots: true,
+		loop: true,
+		autoplay: false,
+		autoplayHoverPause: true,
+		smartSpeed: 1000,
+		lazyLoad: true,
+		nav: false,
+		margin: 0,
+		navText: ["<", ">"],
+		responsive: {
+			0: { items: 1 },
+			1500: { items: 1 },
+			1200: { items: 1 },
+			992: { items: 1 },
+			700: { items: 1 },
+		},
+	});
 });
