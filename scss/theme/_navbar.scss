@@ -1,0 +1,90 @@
+// .navbar {
+// 	padding: 0;
+// }
+.navbar-nav .active .nav-link {
+	border-top: 2px solid $red;
+}
+.main-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.nav-btn {
+	margin-left: 3rem;
+}
+
+#customerType .nav-pills .nav-link {
+	color: $lightBlack;
+	font-weight: 500;
+}
+
+#customerType .nav-pills .nav-link.active {
+	color: $red;
+	font-size: 24px;
+	font-weight: 600;
+	background-color: transparent;
+}
+
+#team .nav-pills .nav-link {
+	color: $red;
+	background-color: transparent;
+	border: 1px solid $red;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#team .nav-pills .nav-link.active {
+	color: white;
+	background-color: $red;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.tooltip-inner {
+	max-width: 200px;
+	padding: 3px 8px;
+	color: #000000;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 0.25rem;
+	opacity: 1;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before {
+	margin-left: -3px;
+	content: "";
+	border-width: 5px 5px 0;
+	border-top-color: #ffffff;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before {
+	margin-left: -3px;
+	content: "";
+	border-width: 0 5px 5px;
+	border-bottom-color: #ffffff;
+}
+
+.owl-theme .owl-nav .owl-prev {
+	display: block !important;
+	position: absolute;
+	top: 20%;
+	left: 1%;
+	border-radius: 25px;
+	padding: 3px 6px;
+	color: $lightBlack !important;
+	font-size: 35px !important;
+}
+.owl-theme .owl-nav .owl-next {
+	display: block !important;
+	position: absolute;
+	top: 20%;
+	right: 1%;
+	border-radius: 25px;
+	padding: 3px 6px;
+	color: $lightBlack !important;
+	font-size: 35px !important;
+}

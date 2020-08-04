@@ -1,0 +1,137 @@
+* {
+	font-family: "Montserrat";
+}
+body {
+	background-color: $bg-primary;
+	font-family: "Montserrat";
+}
+.main-banner {
+	height: 100vh;
+	min-height: 500px;
+	background-image: url("../img/banners/main.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	background-position-y: 60px;
+}
+
+.banner-content {
+	position: absolute;
+	bottom: 0;
+}
+
+.s-rounded {
+	border-radius: 3rem;
+	width: 80px;
+}
+
+.s-img {
+	width: 60px;
+	height: 60px;
+}
+
+.lang-img {
+	width: 80px;
+	height: 80px;
+}
+
+.serv-img {
+	width: 100px;
+	height: 100px;
+}
+
+.stats-content {
+	width: 150px;
+}
+
+.stats-content h1 {
+	color: $red;
+}
+
+.spon-main-img {
+	width: 100%;
+	height: auto;
+}
+
+.owl-carousel .owl-item img,
+.spon-img {
+	width: 100px;
+	height: 100px;
+}
+.team {
+	text-align: center;
+}
+
+.team-img {
+	text-align: center;
+}
+
+.team-img img {
+	width: 140px;
+	height: 135px;
+	// border-radius: 4rem;
+}
+
+.vm-video {
+	padding: 3rem;
+	width: 100%;
+	height: 100%;
+}
+
+.location-content {
+	position: relative;
+}
+
+.content-01 {
+	position: absolute;
+	right: 10%;
+	top: 7%;
+	display: inline-flex;
+}
+
+.content-01 .divider-01 {
+	background-color: $yellow;
+	display: inline-block;
+	height: 3px;
+	width: 320px;
+}
+
+.d-circle {
+	background-color: $yellow;
+	height: 10px;
+	width: 10px;
+	border-radius: 3rem;
+}
+.d-title {
+	background-color: white;
+}
+
+.content-02 {
+	position: absolute;
+	right: 5%;
+	top: 22%;
+	display: inline-flex;
+}
+
+.content-02 .divider-02 {
+	background-color: $yellow;
+	display: inline-block;
+	height: 3px;
+	width: 320px;
+}
+
+.content-03 {
+	position: absolute;
+	right: 5%;
+	top: 30%;
+	display: inline-flex;
+}
+
+.content-03 .divider-03 {
+	background-color: $yellow;
+	display: inline-block;
+	height: 3px;
+	width: 320px;
+}
