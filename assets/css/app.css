@@ -9081,6 +9081,10 @@ li {
   color: #cd2122;
 }
 
+.stats-content h4 {
+  min-height: 45px;
+}
+
 .spon-main-img {
   width: 100% !important;
   height: auto;
