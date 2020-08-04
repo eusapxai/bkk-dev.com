@@ -154,3 +154,18 @@
 	cursor: not-allowed;
 	opacity: 0.6;
 }
+
+.ft-btn-form {
+	border-radius: 2em;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	// height: 35px;
+	line-height: 24px;
+	min-width: 35px;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $red;
+	border: 1px solid $red;
+}

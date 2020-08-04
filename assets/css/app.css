@@ -8757,6 +8757,20 @@ h3 {
   opacity: 0.6;
 }
 
+.ft-btn-form {
+  border-radius: 2em;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 35px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #cd2122;
+  border: 1px solid #cd2122;
+}
+
 .navbar-nav .active .nav-link {
   border-top: 2px solid #cd2122;
 }
@@ -8934,9 +8948,36 @@ h3 {
   font-family: "Montserrat";
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  font-family: "Montserrat", Helvetica-normal, Arial, sans-serif;
+  font-weight: normal;
   background-color: #f4f9ff;
-  font-family: "Montserrat";
+  color: #525252;
+  -webkit-font-kerning: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: visible !important;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #cd2122;
+  text-decoration: none;
+  outline: 0;
+}
+
+label {
+  margin-left: 5px;
 }
 
 h1 {
@@ -8945,6 +8986,11 @@ h1 {
 
 h4 {
   font-weight: 600;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .main-banner {
@@ -9122,6 +9168,65 @@ h4 {
   display: inline-block;
   height: 3px;
   width: 320px;
+}
+
+.ft-title {
+  color: #ffffff;
+}
+
+.ft-content {
+  font-size: 14px;
+}
+
+.ft-content p {
+  color: #ffffff;
+}
+
+.ft-content li {
+  padding: 5px 0;
+}
+
+.ft-content .form-control {
+  background-color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.ft-copyright {
+  display: inline-flex;
+}
+
+.ft-social {
+  width: 60px;
+  height: auto;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.ft-social-circle {
+  width: 40px;
+  border-radius: 4rem;
+  background-color: #1e1e1e;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 /* ---------------------------------------------------
