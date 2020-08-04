@@ -6,15 +6,34 @@
     Max width and lower ones and not more then Max
 ----------------------------------------------------- */
 
-// Small devices (landscape phones, 576px and lower ones)
-@media (max-width: 320px) {
+// Extra large devices (large desktops, 1200px and lower ones)
+@media (max-width: 1200px) {
 }
 
-@media (max-width: 576px) {
+// Large devices (desktops, 992px and lower ones)
+@media (max-width: 1025px) {
+	.content-01 .divider-01 {
+		width: 220px !important;
+	}
+	.content-02 .divider-02 {
+		width: 220px !important;
+	}
+	.content-03 .divider-03 {
+		width: 220px !important;
+	}
+	.content-04 .divider-04 {
+		width: 450px !important;
+	}
+	.content-05 .divider-05 {
+		width: 400px !important;
+	}
+	.content-06 .divider-06 {
+		width: 220px !important;
+	}
 }
 
 // Medium devices (tablets, 768px and lower ones)
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	.navbar-nav .active .nav-link {
 		border-top: none;
 		color: $red !important;
@@ -39,14 +58,87 @@
 	.team {
 		padding: 1rem 0;
 	}
+	.content-01 {
+		right: 5% !important;
+	}
+	.content-01 .divider-01 {
+		width: 150px !important;
+	}
+	.content-02 {
+		right: 0% !important;
+		top: 20% !important;
+	}
+	.content-02 .divider-02 {
+		width: 160px !important;
+	}
+	.content-03 .divider-03 {
+		width: 130px !important;
+	}
+	.content-04 .divider-04 {
+		width: 300px !important;
+	}
+	.content-05 .divider-05 {
+		width: 250px !important;
+	}
+	.content-06 .divider-06 {
+		width: 120px !important;
+	}
 }
 
-// Large devices (desktops, 992px and lower ones)
-@media (max-width: 992px) {
+@media (max-width: 577px) {
+	.d-circle {
+		height: 5px;
+		width: 5px;
+	}
+	.d-title {
+		font-size: 10px;
+		padding: 0.25rem;
+	}
+	.content-01 {
+		right: 0% !important;
+		top: 2% !important;
+	}
+
+	.content-01 .divider-01 {
+		height: 2px !important;
+		width: 70px !important;
+	}
+
+	.content-02 {
+		right: 0% !important;
+		top: 18% !important;
+	}
+
+	.content-02 .divider-02 {
+		height: 2px !important;
+		width: 50px !important;
+	}
+
+	.content-03 {
+		right: 18% !important;
+		top: 35% !important;
+	}
+
+	.content-03 .divider-03 {
+		height: 2px !important;
+		width: 50px !important;
+	}
+	.content-04 .divider-04 {
+		height: 2px !important;
+		width: 130px !important;
+	}
+	.content-05 .divider-05 {
+		height: 2px !important;
+		width: 110px !important;
+	}
+	.content-06 .divider-06 {
+		height: 2px !important;
+		width: 40px !important;
+	}
 }
 
-// Extra large devices (large desktops, 1200px and lower ones)
-@media (max-width: 1200px) {
+// Small devices (landscape phones, 576px and lower ones)
+@media (max-width: 320px) {
 }
 
 /* ---------------------------------------------------

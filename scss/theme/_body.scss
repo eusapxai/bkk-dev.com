@@ -106,6 +106,9 @@ body {
 }
 .d-title {
 	background-color: white;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 1rem;
 }
 
 .content-02 {
@@ -124,8 +127,8 @@ body {
 
 .content-03 {
 	position: absolute;
-	right: 5%;
-	top: 30%;
+	right: 20%;
+	top: 35%;
 	display: inline-flex;
 }
 
@@ -133,7 +136,7 @@ body {
 	background-color: $yellow;
 	display: inline-block;
 	height: 3px;
-	width: 320px;
+	width: 300px;
 }
 
 .content-04 {
@@ -147,5 +150,47 @@ body {
 	background-color: $yellow;
 	display: inline-block;
 	height: 3px;
+	width: 600px;
+}
+
+.content-05 {
+	position: absolute;
+	right: 25%;
+	top: 65%;
+	display: inline-flex;
+}
+
+.content-05 .divider-05 {
+	background-color: $yellow;
+	display: inline-block;
+	height: 3px;
+	width: 500px;
+}
+
+.content-06 {
+	position: absolute;
+	right: 30%;
+	top: 82%;
+	display: inline-flex;
+}
+
+.content-06 .divider-06 {
+	background-color: $yellow;
+	display: inline-block;
+	height: 3px;
 	width: 320px;
 }
+
+// .content-07 {
+// 	position: absolute;
+// 	right: 10%;
+// 	top: 93%;
+// 	display: inline-flex;
+// }
+
+// .content-07 .divider-07 {
+// 	background-color: $yellow;
+// 	display: inline-block;
+// 	height: 3px;
+// 	width: 320px;
+// }
