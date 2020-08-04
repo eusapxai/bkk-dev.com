@@ -39,8 +39,13 @@
 // Medium devices (tablets, 768px and lower ones)
 @media (max-width: 769px) {
 	.navbar-nav .active .nav-link {
-		border-top: none;
 		color: $red !important;
+	}
+	.navbar-nav .active {
+		border-top: none;
+	}
+	.navbar-nav .nav-item {
+		padding: 0;
 	}
 	.nav-btn {
 		margin-left: 0;
@@ -146,6 +151,9 @@
 	.invest-slider .owl-dots {
 		top: 48%;
 		right: 16%;
+	}
+	.navbar {
+		padding: 0.5rem 1rem;
 	}
 }
 

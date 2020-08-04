@@ -1,7 +1,10 @@
-// .navbar {
-// 	padding: 0;
-// }
-.navbar-nav .active .nav-link {
+.navbar {
+	padding: 0;
+}
+.navbar-nav .nav-item {
+	padding: 15px 0;
+}
+.navbar-nav .active {
 	border-top: 2px solid $red;
 }
 .main-logo {
