@@ -8939,6 +8939,14 @@ body {
   font-family: "Montserrat";
 }
 
+h1 {
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: 600;
+}
+
 .main-banner {
   height: 100vh;
   min-height: 500px;
