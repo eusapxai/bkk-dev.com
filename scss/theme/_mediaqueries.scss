@@ -6,11 +6,11 @@
     Max width and lower ones and not more then Max
 ----------------------------------------------------- */
 
-// Extra large devices (large desktops, 1200px and lower ones)
+// desktop laptops
 @media (max-width: 1200px) {
 }
 
-// Large devices (desktops, 992px and lower ones)
+// ipad pro
 @media (max-width: 1025px) {
 	.content-01 .divider-01 {
 		width: 220px !important;
@@ -36,7 +36,7 @@
 	}
 }
 
-// Medium devices (tablets, 768px and lower ones)
+// ipad
 @media (max-width: 769px) {
 	.navbar-nav .active .nav-link {
 		color: $red !important;
@@ -96,8 +96,12 @@
 		top: 20%;
 		right: 15%;
 	}
+	.ins-item {
+		margin: 0;
+	}
 }
 
+// iphone x
 @media (max-width: 577px) {
 	.d-circle {
 		height: 5px;
@@ -157,7 +161,7 @@
 	}
 }
 
-// Small devices (landscape phones, 576px and lower ones)
+// iphone 5
 @media (max-width: 320px) {
 }
 

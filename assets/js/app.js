@@ -17,8 +17,8 @@ $(document).ready(function () {
 			0: { items: 2 },
 			1500: { items: 6 },
 			1200: { items: 5 },
-			992: { items: 3 },
-			700: { items: 2 },
+			992: { items: 4 },
+			700: { items: 3 },
 		},
 	});
 

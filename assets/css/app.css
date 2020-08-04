@@ -9273,6 +9273,10 @@ li {
   text-align: center;
 }
 
+.ins-item {
+  margin: auto;
+}
+
 /* ---------------------------------------------------
     Header Media Queries
 ----------------------------------------------------- */
@@ -9382,6 +9386,10 @@ li {
   .invest-slider .owl-dots {
     top: 20%;
     right: 15%;
+  }
+
+  .ins-item {
+    margin: 0;
   }
 }
 @media (max-width: 577px) {
