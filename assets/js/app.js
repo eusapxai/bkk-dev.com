@@ -13,8 +13,8 @@ $(document).ready(function () {
 		nav: true,
 		margin: 0,
 		navText: [
-			"<div class='left arrow'></div>",
-			"<div class='right arrow'></div>",
+			"<div class='owl-arrow owl-left'></div>",
+			"<div class='owl-arrow owl-right'></div>",
 		],
 		responsive: {
 			0: { items: 2 },

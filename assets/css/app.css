@@ -8847,6 +8847,10 @@ h3 {
   border-bottom-color: #ffffff;
 }
 
+.tooltip.show {
+  opacity: 1;
+}
+
 .spon-slider .owl-nav .owl-prev {
   display: block !important;
   position: absolute;
@@ -8922,19 +8926,19 @@ h3 {
   margin-top: 1rem;
 }
 
-.arrow {
+.owl-arrow {
   border: solid #6e6e6e;
   border-width: 0 6px 6px 0;
   display: inline-block;
   padding: 10px;
 }
 
-.right {
+.owl-right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-.left {
+.owl-left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
