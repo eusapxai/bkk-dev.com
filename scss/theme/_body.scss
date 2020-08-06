@@ -1,4 +1,20 @@
-* {
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Montserrat Regular"), local("Montserrat-Regular"),
+		url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
+			format("woff2");
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+		U+FE2E-FE2F;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 	font-family: "Montserrat";
 }
 html {
@@ -12,8 +28,9 @@ body {
 	-webkit-font-kerning: auto;
 	-webkit-font-smoothing: antialiased;
 	-webkit-backface-visibility: visible !important;
-	overflow-x: hidden;
 	max-width: 100%;
+	min-height: 100%;
+	overflow: hidden;
 }
 
 a {
@@ -30,6 +47,14 @@ a:focus {
 
 label {
 	margin-left: 5px;
+}
+
+textarea {
+	resize: none;
+}
+svg {
+	display: block;
+	overflow: visible;
 }
 
 // img {
@@ -56,9 +81,9 @@ li {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	width: 100%;
-	background-position-y: 60px;
+	// background-position-y: 60px;
 }
 
 .banner-content {
@@ -311,4 +336,15 @@ li {
 
 .ins-item {
 	margin: auto;
+}
+
+.form-control:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+.stats-text span {
+	color: $red;
+	text-decoration: underline;
 }

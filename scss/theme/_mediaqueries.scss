@@ -99,6 +99,10 @@
 	.ins-item {
 		margin: 0;
 	}
+	.slide__text {
+		height: 20rem;
+		text-align: left;
+	}
 }
 
 // iphone x
@@ -158,6 +162,14 @@
 	}
 	.navbar {
 		padding: 0.5rem 1rem;
+	}
+	.slider-pagi {
+		left: 73%;
+		width: 100%;
+	}
+	.slide__text {
+		height: 30rem;
+		text-align: left;
 	}
 }
 
