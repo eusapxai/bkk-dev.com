@@ -9492,6 +9492,7 @@ li {
     min-height: 500px;
     background-image: url("../img/banners/banner02.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
   }
