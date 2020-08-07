@@ -79,6 +79,10 @@ li {
 	width: 30%;
 }
 
+.banner-content .card {
+	margin-left: 4rem;
+}
+
 .s-rounded {
 	border-radius: 3rem;
 	width: 80px;
@@ -97,8 +101,8 @@ li {
 }
 
 .serv-img {
-	width: 100px;
-	height: 100px;
+	width: 55px;
+	height: 55px;
 }
 
 .stats-content {
@@ -149,7 +153,7 @@ li {
 }
 .mv-mob-content {
 	position: absolute;
-	top: -20%;
+	top: -15%;
 }
 .vm-video {
 	padding: 3rem;
@@ -159,6 +163,51 @@ li {
 
 .location-content {
 	position: relative;
+}
+
+.a-wrapper {
+	height: 40px;
+	// margin: auto;
+}
+.a-size {
+	width: 30px;
+	height: 30px;
+}
+
+.a-square {
+	width: 10%;
+}
+
+.a-per {
+	width: 15%;
+}
+
+.a-name {
+	width: 70%;
+}
+.a1-color {
+	background-color: #0b5c5d;
+}
+.a2-color {
+	background-color: #309569;
+}
+.a3-color {
+	background-color: #00763b;
+}
+.a4-color {
+	background-color: #0d7470;
+}
+.a5-color {
+	background-color: #309569;
+}
+.a6-color {
+	background-color: #00753a;
+}
+.a7-color {
+	background-color: #5b9c36;
+}
+.a8-color {
+	background-color: #2b9361;
 }
 
 .content-01 {
