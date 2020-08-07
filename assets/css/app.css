@@ -9566,10 +9566,16 @@ li {
 
   .serv-card {
     background-color: #fff;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 1rem;
+    margin: 2rem 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .mv-mob-wrapper {
+    position: relative;
+    min-height: 18rem;
   }
 }
 /* ---------------------------------------------------
