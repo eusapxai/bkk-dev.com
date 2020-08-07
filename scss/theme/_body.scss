@@ -103,7 +103,10 @@ li {
 .serv-card {
 	margin-top: 2rem;
 }
-
+.serv-card a,
+.serv-card a:hover {
+	color: $black;
+}
 .serv-img {
 	width: 65px;
 	height: 65px;

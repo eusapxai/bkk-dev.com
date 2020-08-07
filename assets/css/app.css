@@ -9145,6 +9145,11 @@ li {
   margin-top: 2rem;
 }
 
+.serv-card a,
+.serv-card a:hover {
+  color: #000000;
+}
+
 .serv-img {
   width: 65px;
   height: 65px;
