@@ -1,20 +1,4 @@
-@font-face {
-	font-family: "Montserrat";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Montserrat Regular"), local("Montserrat-Regular"),
-		url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2)
-			format("woff2");
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-		U+FE2E-FE2F;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
 	font-family: "Montserrat";
 }
 html {
@@ -24,13 +8,12 @@ body {
 	font-family: "Montserrat", Helvetica-normal, Arial, sans-serif;
 	font-weight: normal;
 	background-color: $bg-primary;
-	color: #525252;
+	color: #000000;
 	-webkit-font-kerning: auto;
 	-webkit-font-smoothing: antialiased;
 	-webkit-backface-visibility: visible !important;
+	overflow-x: hidden;
 	max-width: 100%;
-	min-height: 100%;
-	overflow: hidden;
 }
 
 a {
@@ -52,10 +35,6 @@ label {
 textarea {
 	resize: none;
 }
-svg {
-	display: block;
-	overflow: visible;
-}
 
 // img {
 // 	width: 100%;
@@ -70,6 +49,10 @@ h4 {
 	font-weight: 600;
 }
 
+h6 {
+	font-weight: bold;
+}
+
 li {
 	text-decoration: none;
 	list-style-type: none;
@@ -77,9 +60,8 @@ li {
 .main-banner {
 	height: 100vh;
 	min-height: 500px;
-	background-image: url("../img/banners/main.jpg");
+	background-image: url("../img/banners/banner01.png");
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
 	// background-attachment: fixed;
 	width: 100%;
@@ -94,11 +76,13 @@ li {
 .s-rounded {
 	border-radius: 3rem;
 	width: 80px;
+	height: 80px;
 }
 
 .s-img {
-	width: 60px;
-	height: 60px;
+	width: 3rem;
+	height: auto;
+	text-align: center;
 }
 
 .lang-img {
@@ -131,6 +115,13 @@ li {
 .spon-img {
 	width: 100px;
 	height: auto;
+	filter: grayscale(100%);
+}
+.spon-slider .owl-item:hover img,
+.spon-img:hover {
+	width: 100px;
+	height: auto;
+	filter: none;
 }
 
 .team {
@@ -146,7 +137,14 @@ li {
 	height: 135px;
 	// border-radius: 4rem;
 }
-
+.mv-mob-wrapper {
+	position: relative;
+	min-height: 15rem;
+}
+.mv-mob-content {
+	position: absolute;
+	top: -20%;
+}
 .vm-video {
 	padding: 3rem;
 	width: 100%;
@@ -343,7 +341,6 @@ li {
 	border: none;
 	box-shadow: none;
 }
-
 .stats-text span {
 	color: $red;
 	text-decoration: underline;

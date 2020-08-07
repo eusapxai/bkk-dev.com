@@ -55,11 +55,11 @@
 		padding: 0.25rem;
 	}
 	.fs-36 {
-		font-size: 26px;
+		font-size: 18px;
 	}
 
 	.fs-48 {
-		font-size: 36px;
+		font-size: 24px;
 	}
 	.vm-video {
 		padding: 0;
@@ -99,9 +99,16 @@
 	.ins-item {
 		margin: 0;
 	}
-	.slide__text {
-		height: 20rem;
-		text-align: left;
+	.main-banner {
+		height: 10vh;
+		min-height: 500px;
+		background-image: url("../img/banners/banner02.png");
+		background-size: cover;
+		// background-position: center;
+		background-repeat: no-repeat;
+		// background-attachment: fixed;
+		width: 100%;
+		// background-position-y: 60px;
 	}
 }
 
@@ -163,13 +170,13 @@
 	.navbar {
 		padding: 0.5rem 1rem;
 	}
-	.slider-pagi {
-		left: 73%;
-		width: 100%;
-	}
-	.slide__text {
-		height: 30rem;
-		text-align: left;
+
+	.serv-card {
+		background-color: #fff;
+		padding: 2rem;
+		margin: 2rem;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+		border-radius: 0.5rem;
 	}
 }
 
@@ -191,6 +198,9 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+	.spon-carousel {
+		margin-left: 10%;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
