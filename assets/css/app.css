@@ -9104,13 +9104,15 @@ li {
   min-height: 500px;
   background-image: url("../img/banners/banner01.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
 }
 
 .banner-content {
   position: absolute;
-  bottom: 0;
+  bottom: 41%;
+  width: 30%;
 }
 
 .s-rounded {
