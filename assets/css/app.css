@@ -9099,6 +9099,11 @@ li {
   list-style-type: none;
 }
 
+.main-banner-img {
+  width: 100%;
+  height: auto;
+}
+
 .main-banner {
   height: 100vh;
   min-height: 500px;
