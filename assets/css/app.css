@@ -8794,13 +8794,16 @@ h3 {
 
 #customerType .nav-pills .nav-link {
   color: #222222;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 24px;
+  opacity: 0.7;
 }
 
 #customerType .nav-pills .nav-link.active {
   color: #cd2122;
   font-size: 24px;
   font-weight: 600;
+  opacity: 1;
   background-color: transparent;
 }
 
@@ -8887,8 +8890,9 @@ h3 {
 
 .invest-slider .owl-dots {
   position: absolute;
-  top: 20%;
-  right: 25%;
+  bottom: 10%;
+  right: 22%;
+  text-align: center;
 }
 
 .invest-slider .owl-dots .owl-dot {
@@ -9199,6 +9203,10 @@ li {
   height: 135px;
 }
 
+.team-name {
+  min-height: 3rem;
+}
+
 .mv-mob-wrapper {
   position: relative;
   min-height: 15rem;
@@ -9476,8 +9484,8 @@ li {
   }
 
   .invest-slider .owl-dots {
-    top: 20%;
-    right: 21%;
+    bottom: 10%;
+    right: 20%;
   }
 }
 @media (max-width: 769px) {
@@ -9551,8 +9559,8 @@ li {
   }
 
   .invest-slider .owl-dots {
-    top: 20%;
-    right: 15%;
+    bottom: -5%;
+    right: 16%;
   }
 
   .ins-item {
@@ -9626,8 +9634,8 @@ li {
   }
 
   .invest-slider .owl-dots {
-    top: 48%;
-    right: 16%;
+    position: initial;
+    text-align: center;
   }
 
   .navbar {
@@ -9660,6 +9668,11 @@ li {
     position: relative;
     min-height: 18rem;
   }
+
+  .invest-slider .owl-dots {
+    position: initial;
+    text-align: center;
+  }
 }
 /* ---------------------------------------------------
     Min width and up and not lower then Min
@@ -9667,6 +9680,18 @@ li {
 @media (min-width: 992px) {
   .spon-carousel {
     margin-left: 10%;
+  }
+
+  .farmer-h {
+    max-height: 38vh;
+  }
+
+  .b2b-h {
+    max-height: 30vh;
+  }
+
+  .b2g-h {
+    max-height: 40vh;
   }
 }
 

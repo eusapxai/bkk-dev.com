@@ -18,13 +18,16 @@
 
 #customerType .nav-pills .nav-link {
 	color: $lightBlack;
-	font-weight: 500;
+	font-weight: 600;
+	font-size: 24px;
+	opacity: 0.7;
 }
 
 #customerType .nav-pills .nav-link.active {
 	color: $red;
 	font-size: 24px;
 	font-weight: 600;
+	opacity: 1;
 	background-color: transparent;
 }
 
@@ -109,8 +112,9 @@
 
 .invest-slider .owl-dots {
 	position: absolute;
-	top: 20%;
-	right: 25%;
+	bottom: 10%;
+	right: 22%;
+	text-align: center;
 }
 
 .invest-slider .owl-dots .owl-dot {

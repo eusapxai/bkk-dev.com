@@ -154,6 +154,9 @@ li {
 	height: 135px;
 	// border-radius: 4rem;
 }
+.team-name {
+	min-height: 3rem;
+}
 .mv-mob-wrapper {
 	position: relative;
 	min-height: 15rem;
@@ -167,7 +170,6 @@ li {
 	width: 100%;
 	height: 100%;
 }
-
 .location-content {
 	position: relative;
 }
