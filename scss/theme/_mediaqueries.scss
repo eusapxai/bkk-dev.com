@@ -110,6 +110,14 @@
 		width: 100%;
 		// background-position-y: 60px;
 	}
+	.main-slider {
+		height: 50vh;
+		max-height: 100vh;
+	}
+	.main-banner-img {
+		width: 100%;
+		height: 30vh;
+	}
 }
 
 // iphone x
@@ -221,15 +229,20 @@
 		margin-left: 10%;
 	}
 
-	.farmer-h {
-		max-height: 38vh;
+	.cust-img {
+		height: 70%;
+		width: auto;
 	}
-	.b2b-h {
-		max-height: 30vh;
-	}
-	.b2g-h {
-		max-height: 40vh;
-	}
+
+	// .farmer-h {
+	// 	max-height: 38vh;
+	// }
+	// .b2b-h {
+	// 	max-height: 30vh;
+	// }
+	// .b2g-h {
+	// 	max-height: 40vh;
+	// }
 }
 
 // Extra large devices (large desktops, 1200px and up)
