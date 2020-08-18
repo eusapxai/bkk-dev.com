@@ -46,7 +46,7 @@ $(document).ready(function () {
 	$(".banner-slider").owlCarousel({
 		dots: false,
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		lazyLoad: true,
