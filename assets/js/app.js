@@ -6,7 +6,7 @@ $(document).ready(function () {
 	$(".spon-slider").owlCarousel({
 		dots: false,
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		lazyLoad: true,
@@ -28,7 +28,7 @@ $(document).ready(function () {
 	$(".invest-slider").owlCarousel({
 		dots: true,
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		lazyLoad: true,

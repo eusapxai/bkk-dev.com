@@ -1,8 +1,4 @@
-.btn-yellow,
-.btn-green,
-.btn-green-outline,
 .btn-red,
-.btn-white,
 .btn-red-outline {
 	border-radius: 2em;
 	box-shadow: none;
@@ -15,11 +11,7 @@
 	text-transform: uppercase;
 }
 
-.btn-yellow-sm,
-.btn-green-sm,
-.btn-green-outline-sm,
 .btn-red-sm,
-.btn-white-sm,
 .btn-red-outline-sm {
 	border-radius: 2em;
 	display: inline-block;
@@ -31,63 +23,6 @@
 	padding: 5px 20px;
 	text-align: center;
 	text-transform: uppercase;
-}
-
-.btn-green,
-.btn-green-sm {
-	border: 1px solid $green;
-	background-color: $green;
-	color: $white;
-}
-
-.btn-green:hover,
-.btn-green:focus,
-.btn-green-sm:hover,
-.btn-green-sm:focus {
-	color: $white;
-	box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-		0 1px 3px 1px rgba(60, 64, 67, 0.16);
-	transition: box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-white,
-.btn-white-sm {
-	border: 1px solid $white;
-	background-color: $white;
-	color: #222222;
-	border-radius: 0;
-	width: 100%;
-}
-
-.btn-white:hover,
-.btn-white:focus,
-.btn-white-sm:hover,
-.btn-white-sm:focus {
-	background-color: $red;
-	border: 1px solid $red;
-	color: $white;
-	box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-		0 1px 3px 1px rgba(60, 64, 67, 0.16);
-	transition: box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-green-outline,
-.btn-green-outline-sm {
-	border: 1px solid $green;
-	background-color: $white;
-	color: $green;
-}
-
-.btn-green-outline:hover,
-.btn-green-outline:focus,
-.btn-green-outline-sm:hover,
-.btn-green-outline-sm:focus {
-	border: 1px solid $green;
-	background-color: $green;
-	color: $white;
-	box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-		0 1px 3px 1px rgba(60, 64, 67, 0.16);
-	transition: box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-red,
@@ -126,33 +61,6 @@
 	box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
 		0 1px 3px 1px rgba(60, 64, 67, 0.16);
 	transition: box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-yellow,
-.btn-yellow-sm {
-	border: 1px solid $yellow;
-	background-color: $yellow;
-	color: $white;
-}
-
-.btn-yellow:hover,
-.btn-yellow:focus,
-.btn-yellow-sm:hover,
-.btn-yellow-sm:focus {
-	color: $white;
-	box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-		0 1px 3px 1px rgba(60, 64, 67, 0.16);
-	transition: box-shadow 135ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-// disable button
-.btn-green:disabled,
-.btn-green-sm:disabled {
-	border: 1px solid $green;
-	background-color: $green;
-	color: $white;
-	cursor: not-allowed;
-	opacity: 0.6;
 }
 
 .ft-btn-form {
