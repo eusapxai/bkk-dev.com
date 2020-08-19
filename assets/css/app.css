@@ -8610,6 +8610,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+button {
+  outline: none !important;
+}
+
 .btn-red,
 .btn-red-outline {
   border-radius: 2em;
@@ -8858,6 +8862,32 @@ h3 {
 .owl-left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+}
+
+.banner-slider .owl-dots {
+  position: absolute;
+  top: 45%;
+  right: 4%;
+  text-align: center;
+  display: inline-grid;
+}
+
+.banner-slider .owl-dots .owl-dot {
+  background-color: #f8f9fa;
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5rem;
+  border-radius: 3rem;
+  margin-top: 10px;
+}
+
+.banner-slider .owl-dots .active:focus,
+.banner-slider .owl-dots .active:active {
+  outline: 0;
+}
+
+.banner-slider .owl-dots .active {
+  background-color: #cd2122;
 }
 
 .bg-0 {
@@ -9594,6 +9624,11 @@ li {
   .a-per {
     width: 20%;
   }
+
+  .banner-slider .owl-dots {
+    top: 20%;
+    right: 0%;
+  }
 }
 @media (max-width: 320px) {
   .mv-mob-wrapper {
@@ -9604,6 +9639,11 @@ li {
   .invest-slider .owl-dots {
     position: initial;
     text-align: center;
+  }
+
+  .banner-slider .owl-dots {
+    top: 15%;
+    right: 0%;
   }
 }
 /* ---------------------------------------------------
