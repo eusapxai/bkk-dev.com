@@ -200,6 +200,8 @@
 	.banner-slider .owl-dots {
 		top: 20%;
 		right: 0%;
+		bottom: 100%;
+		display: inline-grid;
 	}
 }
 
@@ -216,6 +218,8 @@
 	.banner-slider .owl-dots {
 		top: 15%;
 		right: 0%;
+		bottom: 100%;
+		display: inline-grid;
 	}
 }
 
@@ -233,9 +237,9 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-	.spon-carousel {
-		margin-left: 10%;
-	}
+	// .spon-carousel {
+	// 	margin-left: 10%;
+	// }
 
 	.cust-img {
 		height: 60vh;

@@ -19,7 +19,7 @@ $(document).ready(function () {
 		responsive: {
 			0: { items: 2 },
 			1500: { items: 5 },
-			1200: { items: 4 },
+			1200: { items: 5 },
 			992: { items: 4 },
 			700: { items: 3 },
 		},

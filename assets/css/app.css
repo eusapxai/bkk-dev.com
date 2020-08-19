@@ -8866,10 +8866,9 @@ button {
 
 .banner-slider .owl-dots {
   position: absolute;
-  top: 45%;
-  right: 4%;
+  bottom: 15%;
+  right: 50%;
   text-align: center;
-  display: inline-grid;
 }
 
 .banner-slider .owl-dots .owl-dot {
@@ -8896,6 +8895,10 @@ button {
 
 .bg-1 {
   background: linear-gradient(#fff 80%, #f4f9ff 20%);
+}
+
+.bg-4 {
+  background: linear-gradient(#fff 50%, #f4f9ff 50%);
 }
 
 .bg-2 {
@@ -9628,6 +9631,8 @@ li {
   .banner-slider .owl-dots {
     top: 20%;
     right: 0%;
+    bottom: 100%;
+    display: inline-grid;
   }
 }
 @media (max-width: 320px) {
@@ -9644,16 +9649,14 @@ li {
   .banner-slider .owl-dots {
     top: 15%;
     right: 0%;
+    bottom: 100%;
+    display: inline-grid;
   }
 }
 /* ---------------------------------------------------
     Min width and up and not lower then Min
 ----------------------------------------------------- */
 @media (min-width: 992px) {
-  .spon-carousel {
-    margin-left: 10%;
-  }
-
   .cust-img {
     height: 60vh;
     width: auto;
