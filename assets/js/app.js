@@ -16,6 +16,10 @@ $(document).ready(function () {
 		if (recaptcha !== "") {
 			$.ajax({
 				type: "POST",
+				headers: {
+					"Access-Control-Allow-Origin":
+						"https://react.farmtohome.com.pk",
+				},
 				url: "https://react.farmtohome.com.pk/api/v1/test",
 				dataType: "json",
 				data: {
