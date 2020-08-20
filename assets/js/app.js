@@ -2,6 +2,8 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
+function loadCaptcha() {
+	console.log("load");
 $(document).ready(function () {
 	$(window).resize(function () {
 		var screenSize = $(window).width();
