@@ -23,6 +23,11 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://www.google.com/recaptcha/api.js"
+			async
+			defer
+		></script>
 		<link rel="stylesheet" href="assets/css/app.css?v=1.7" />
 
 		<title>Bakhabar Kissan</title>
@@ -1953,7 +1958,10 @@
 											</h6> -->
 										</div>
 										<div class="team-social">
-											<a href="#link">
+											<a
+												href="https://www.linkedin.com/in/ali-raza-qau"
+												target="_blank"
+											>
 												<img
 													src="assets/img/icon/linkedin.png"
 													alt="linkedin"
@@ -2220,6 +2228,10 @@
 											required
 										></textarea>
 									</div>
+									<div
+										class="g-recaptcha"
+										data-sitekey="6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si"
+									></div>
 									<div class="form-group">
 										<button
 											type="submit"
@@ -2353,4 +2365,9 @@
 	></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="assets/js/app.js?v=1.1"></script>
+	<script>
+		function onSubmit(token) {
+			document.getElementById("demo-form").submit();
+		}
+	</script>
 </html>
