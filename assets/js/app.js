@@ -17,8 +17,7 @@ $(document).ready(function () {
 			$.ajax({
 				type: "POST",
 				headers: {
-					"Access-Control-Allow-Origin":
-						"https://react.farmtohome.com.pk",
+					"Access-Control-Allow-Origin": "*",
 				},
 				url: "https://react.farmtohome.com.pk/api/v1/test",
 				dataType: "json",
@@ -33,7 +32,7 @@ $(document).ready(function () {
 					console.log(response);
 				},
 				error: function (response) {
-					// var errors = response.responseJSON;
+					var errors = response.responseJSON;
 					console.log(errors);
 				},
 			});
