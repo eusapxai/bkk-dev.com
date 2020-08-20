@@ -3,11 +3,41 @@ $(function () {
 });
 
 function loadCaptcha() {
-	console.log("load");
-	$("#contact-form").append(
-		'<div class="g-recaptcha" data-sitekey="6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si"></div>'
-	);
+	$("#captcha").removeClass("d-none");
 }
+
+$(document).ready(function () {
+	$("#contact-form").on("submit", function (event) {
+		event.preventDefault();
+		var recaptcha = $("#g-recaptcha-response").val();
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+		if (recaptcha !== "") {
+			$.ajax({
+				type: "POST",
+				url: "https://react.farmtohome.com.pk/api/v1/test",
+				dataType: "json",
+				data: {
+					secret: "6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si",
+					captcha: recaptcha,
+					name: name,
+					email: email,
+					message: message,
+				},
+				success: function (response) {
+					console.log(response);
+				},
+				error: function (response) {
+					// var errors = response.responseJSON;
+					console.log(errors);
+				},
+			});
+		} else {
+			alert("please check the captcha");
+		}
+	});
+});
 
 $(document).ready(function () {
 	$(window).resize(function () {

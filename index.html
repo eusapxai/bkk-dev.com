@@ -2224,7 +2224,7 @@
 							<div class="ft-content pl-1 pt-3">
 								<p>We'll reach out over email</p>
 
-								<form id="contact-form" action="sentmail.php" method="POST">
+								<form id="contact-form" method="POST">
 									<div class="form-group">
 										<input
 											type="text"
@@ -2257,7 +2257,18 @@
 											onfocus="loadCaptcha()"
 										></textarea>
 									</div>
-									
+
+									<div
+										id="captcha"
+										class="form-group p-2 d-none"
+									>
+										<div
+											id="g-recaptcha-response"
+											class="g-recaptcha"
+											data-sitekey="6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si"
+										></div>
+									</div>
+
 									<div class="form-group">
 										<button
 											type="submit"
