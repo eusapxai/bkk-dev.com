@@ -18,6 +18,8 @@ $(document).ready(function () {
 				type: "POST",
 				headers: {
 					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Headers":
+						"Origin, X-Requested-With, Content-Type, Accept",
 				},
 				url: "https://react.farmtohome.com.pk/api/v1/test",
 				dataType: "json",
