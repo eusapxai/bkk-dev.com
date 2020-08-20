@@ -22,7 +22,6 @@ $(document).ready(function () {
 						"Origin, X-Requested-With, Content-Type, Accept",
 					"Content-Type": "application/json",
 				},
-				crossOrigin: true,
 				crossDomain: true,
 				url: "https://react.farmtohome.com.pk/api/v1/test",
 				dataType: "jsonp",
