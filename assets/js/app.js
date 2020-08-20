@@ -3,6 +3,16 @@ $(function () {
 });
 
 $(document).ready(function () {
+	$(window).resize(function () {
+		var screenSize = $(window).width();
+		if (screenSize > 1500) {
+			$("#mainbanner").addClass("container");
+			$("#mainbanner").removeClass("container-fluid");
+		} else {
+			$("#mainbanner").addClass("container-fluid");
+			$("#mainbanner").removeClass("container");
+		}
+	});
 	$(".spon-slider").owlCarousel({
 		dots: false,
 		loop: true,

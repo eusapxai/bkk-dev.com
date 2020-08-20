@@ -9662,5 +9662,26 @@ li {
     width: auto;
   }
 }
+@media (min-width: 1400px) {
+  .cust-img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (min-width: 1500px) {
+  .cust-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .main-slider {
+    height: auto;
+  }
+
+  .main-banner-img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
