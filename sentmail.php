@@ -2,29 +2,35 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-if (isset($_POST['submitEmail'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = 'bkk website';
-    $msg = $_POST['message'];
-    // Content-Type helps email client to parse file as HTML
-    // therefore retaining styles
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $message = "<html>
-  <head>
-  	<title>New message from website contact form</title>
-  </head>
-  <body>
-      <p>" . $name . "</p>
-      <p>" . $email . "</p>
-      <p>" . $msg . "</p>
+//include guzzle http
+require 'guzzle/autoload.php';
 
-  </body>
-  </html>";
-    if (mail('website_owner@example.com', $subject, $message, $headers)) {
-        echo "email sent successfully";
-    } else {
-        echo "Failed to send email. Please try again later";
-    }
+$client = new GuzzleHttp\Client();
+
+$secret = "6LfxRcEZAAAAAPpFTSz63QPQAwYrsujYd__qIVk7";
+$responseCaptcha = $request->response;
+$name = $request->name;
+$email = $request->email;
+$message = $request->message;
+$client = new \GuzzleHttp\Client();
+$res = $client->request('POST', 'https://www.google.com/recaptcha/api/siteverify', [
+    'form_params' => [
+        'secret' => $secret,
+        'response' => $responseCaptcha,
+    ],
+    'connect_timeout' => 5,
+]);
+$http_code = $res->getStatusCode();
+$response = json_decode($res->getBody(), true);
+if ($http_code == 200 && $response['success']) {
+    //send email
+    return response()->json([
+        'statusCode' => 200,
+        'status' => 'captcha valid',
+    ], 200);
+} else {
+    return response()->json([
+        'statusCode' => 200,
+        'status' => 'captcha invalid',
+    ], 200);
 }

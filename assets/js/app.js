@@ -23,7 +23,7 @@ $(document).ready(function () {
 					"Content-Type": "application/json",
 				},
 				crossDomain: true,
-				url: "https://react.farmtohome.com.pk/api/v1/test",
+				url: "sentmail.php",
 				dataType: "json",
 				data: {
 					captcha: recaptcha,
