@@ -20,7 +20,9 @@ $(document).ready(function () {
 					"Access-Control-Allow-Origin": "*",
 					"Access-Control-Allow-Headers":
 						"Origin, X-Requested-With, Content-Type, Accept",
+					"Content-Type": "application/json",
 				},
+				crossDomain: true,
 				url: "https://react.farmtohome.com.pk/api/v1/test",
 				dataType: "json",
 				data: {
