@@ -4,6 +4,11 @@ $(function () {
 
 function loadCaptcha() {
 	console.log("load");
+	$("#contact-form").append(
+		'<div class="g-recaptcha" data-sitekey="6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si"></div>'
+	);
+}
+
 $(document).ready(function () {
 	$(window).resize(function () {
 		var screenSize = $(window).width();
