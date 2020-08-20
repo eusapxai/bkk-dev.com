@@ -24,9 +24,8 @@ $(document).ready(function () {
 				},
 				crossDomain: true,
 				url: "https://react.farmtohome.com.pk/api/v1/test",
-				dataType: "jsonp",
+				dataType: "json",
 				data: {
-					secret: "6LdzM8EZAAAAABZ4LOtB17gEV_bhZoByh56fe5Si",
 					captcha: recaptcha,
 					name: name,
 					email: email,
