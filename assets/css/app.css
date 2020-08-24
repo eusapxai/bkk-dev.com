@@ -9723,10 +9723,8 @@ li {
   }
 
   .banner-slider .owl-dots {
-    top: 20%;
-    right: 0%;
-    bottom: 100%;
-    display: inline-grid;
+    right: 45%;
+    bottom: 50%;
   }
 }
 @media (max-width: 320px) {
