@@ -23,16 +23,13 @@
 			href="https://fonts.googleapis.com/css?family=Montserrat"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://www.google.com/recaptcha/api.js"
-			async
-			defer
-		></script>
+
 		<link rel="stylesheet" href="assets/css/app.css?v=1.7" />
 
 		<title>Bakhabar Kissan</title>
 	</head>
 	<body>
+		<div id="loader" class="loader"></div>
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container">
@@ -649,7 +646,7 @@
 		<section class="py-5 bg-0">
 			<div class="container">
 				<div class="w-100 py-3">
-					<h4 class="text-center fs-36">Local Languages</h4>
+					<h4 class="text-center fs-36">Languages</h4>
 				</div>
 				<div class="row py-4">
 					<div class="col-xs-6 col-sm-6 col-md-4 col-lg-1 mx-auto">
@@ -721,7 +718,7 @@
 							/>
 						</div>
 						<h6 class="text-uppercase pt-4 text-center fs-20">
-							Sariki
+							Saraiki
 						</h6>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-4 col-lg-1 mx-auto">
@@ -733,7 +730,7 @@
 							/>
 						</div>
 						<h6 class="text-uppercase pt-4 text-center fs-20">
-							Hindkho
+							Hindko
 						</h6>
 					</div>
 				</div>
@@ -813,7 +810,7 @@
 												related issues that exist in the
 												Agri value chain. We not only
 												provide crop, livestock,
-												weather, mandi rates’, remote
+												weather, mandi rates, remote
 												sensing based advisory to
 												farmers, but also connect them
 												to consumers and business. Every
@@ -939,7 +936,7 @@
 					<h4 class="text-center fs-36">
 						(It all starts at
 						<a href="tel:03030300000" class="text-black"
-							>+ 92 30 30 300 000</a
+							>+92 303 030 0000</a
 						>)
 					</h4>
 				</div>
@@ -997,7 +994,9 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="serv-card">
-							<a href="tel:03030300000">
+							<a
+								href="sms:+923030300000&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for"
+							>
 								<div class="text-center pt-4">
 									<img
 										data-toggle="tooltip"
@@ -1309,7 +1308,7 @@
 					<div class="col-12">
 						<div class="pt-4">
 							<h4 class="fs-30 text-center">
-								Our Partners & Investors
+								Our Partners
 							</h4>
 						</div>
 						<div class="spon-carousel bg-white p-2">
@@ -2265,7 +2264,7 @@
 										<div
 											id="g-recaptcha-response"
 											class="g-recaptcha"
-											data-sitekey="6LfxRcEZAAAAAJVqp42HHT99VB1uqURldveBTHMB"
+											data-sitekey="6LcPxsEZAAAAALHuX4d-TqqtHcg4WjLVGEy76aC3"
 										></div>
 									</div>
 
@@ -2382,6 +2381,48 @@
 				</div>
 			</div>
 		</footer>
+		<section>
+			<div id="showModal" class="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div id="success" class="d-none">
+								<div class="text-center">
+									<p>
+										Thank you for getting in touch!
+									</p>
+									<p>
+										We appreciate you contacting bakhabar
+										kissan. One of our colleagues will get
+										back in touch with you soon!
+									</p>
+									<p>Have a great day!</p>
+								</div>
+							</div>
+							<div id="error" class="d-none">
+								<div class="text-center">
+									<h4>Opps</h4>
+									<p>
+										Something went wrong, Please try again.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="w-100 text-center">
+								<button
+									type="button"
+									class="btn-red-sm"
+									data-dismiss="modal"
+								>
+									Ok
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -2400,6 +2441,7 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"
 	></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="assets/js/app.js?v=1.3"></script>
 </html>

@@ -8,6 +8,7 @@ function loadCaptcha() {
 
 $(document).ready(function () {
 	$("#contact-form").on("submit", function (event) {
+		$("#loader").addClass("d-block");
 		event.preventDefault();
 		var recaptcha = $("#g-recaptcha-response").val();
 		var name = $("#name").val();
@@ -15,31 +16,46 @@ $(document).ready(function () {
 		var message = $("#message").val();
 		if (recaptcha !== "") {
 			$.ajax({
-				type: "POST",
-				headers: {
-					"Access-Control-Allow-Origin": "*",
-					"Access-Control-Allow-Headers":
-						"Origin, X-Requested-With, Content-Type, Accept",
-					"Content-Type": "application/json",
-				},
-				crossDomain: true,
+				type: "post",
+				async: false,
 				url: "sentmail.php",
 				dataType: "json",
 				data: {
-					captcha: recaptcha,
+					response: recaptcha,
 					name: name,
 					email: email,
 					message: message,
 				},
 				success: function (response) {
-					console.log(response);
+					if (response.statusCode == 200) {
+						$("#success").addClass("d-block");
+						$("#success").removeClass("d-none");
+						$("#error").addClass("d-none");
+						$("#showModal").modal("show");
+						$("#loader").removeClass("d-block");
+						grecaptcha.reset();
+						$("#captcha").addClass("d-none");
+						document.getElementById("contact-form").reset();
+					} else {
+						$("#success").removeClass("d-block");
+						$("#success").addClass("d-none");
+						$("#error").addClass("d-block");
+						$("#showModal").modal("show");
+						$("#loader").removeClass("d-block");
+						grecaptcha.reset();
+					}
 				},
 				error: function (response) {
-					var errors = response.responseJSON;
-					console.log(errors);
+					$("#success").removeClass("d-block");
+					$("#success").addClass("d-none");
+					$("#error").addClass("d-block");
+					$("#showModal").modal("show");
+					$("#loader").removeClass("d-block");
+					grecaptcha.reset();
 				},
 			});
 		} else {
+			$("#loader").removeClass("d-block");
 			alert("please check the captcha");
 		}
 	});
